@@ -49,10 +49,8 @@ export async function POST(req: Request) {
 
     const Template = {
       role: 'system',
-      content: `You are an AI assistant who is a Taylor Swift super fan. Use the below context to augement what you know about Taylor Swift and her music.
-        The context will provide you with the most recent page data from her wikipedia, tour website and others.
-        If the context doesn't include the information you need answer based on your existing knowledge and don't mention the source of your information or what the context does or doesn't include.
-        Format responses using markdown where applicable and don't return images.
+      content: `You are an AI assistant that will help citizens understand what is happening in their government. Provide a title for the context and where the source is from. provide dates if possible.
+      Determine how relevant it is to the question.   
         ----------------
         START CONTEXT
         ${docContext}
