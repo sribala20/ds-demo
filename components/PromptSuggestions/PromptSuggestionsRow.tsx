@@ -2,9 +2,9 @@ import PromptSuggestionButton from "./PromptSuggestionButton";
 
 const PromptSuggestionRow = ({ onPromptClick }) => {
   const prompts = [
-    "How did Taylor become Time's Person of the Year? 🎤",
-    "What is Taylor's net worth? 💰",
-    "What were the surprise songs in Chicago? 🤯",
+    "Are there any initiatives for sports activities?",
+    "Whats with all the bike lanes?!",
+    "What is the city doing about homelessness?",
     "How many Grammy Awards has Taylor won? 🏆",
   ];
 

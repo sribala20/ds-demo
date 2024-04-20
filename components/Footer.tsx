@@ -1,6 +1,6 @@
 
 const Footer = () => {
-  const fillColor = "#820DEB";
+  const fillColor = "#050505";
 
   return (
     <footer className="chatbot-text-tertiary flex justify-between text-sm mt-6 mb-2">

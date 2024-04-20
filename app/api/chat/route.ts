@@ -46,11 +46,15 @@ export async function POST(req: Request) {
       console.log("Error querying db...");
       docContext = "";
     }
-
+//Only if the context does not provide any information relevant to the question, state that more information can be found on the Slo City website https://www.slocity.org/
+//state documents where more information can be found. 
     const Template = {
       role: 'system',
-      content: `You are an AI assistant that will help citizens understand what is happening in their government. Provide a title for the context and where the source is from. provide dates if possible.
-      Determine how relevant it is to the question.   
+      content: `You are a kind and happy AI assistant providing citizens of San Luis Obispo answers to their questions about San Luis Obispo city government.
+      The context will provide you with the page data from San Luis Obispo city council agenda packets, city ordinances, and meeting minutes.
+      Answer in a conscise, 3-5 sentence response.
+      If the context doesn't include the information you need to answer based on your existing knowledge and don't mention the source of your information or what the context does or doesn't include. 
+      Format responses using markdown where applicable and don't return images. 
         ----------------
         START CONTEXT
         ${docContext}

@@ -1,29 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
 
 :root {
   --text-primary: #FFFFFF;
   --text-primary-inverse: #090909;
-  --text-primary-main: #7724AA;
+  --text-primary-main: #050505;
   --text-secondary: #A6AAAE;
   --text-secondary-inverse: #494A4D;
-  --text-bubble-primary: #EB4039;
-  --background-bubble-primary: #FFDEE0;
+  --text-bubble-primary: #233c64;
+  --background-bubble-primary: #d6e4f1;
   --background-bubble-secondary: #F0F0F0;
   --border-primary: #CED0D2;
   --background-soft: #F3E5F5;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --text-tertiary: #820DEB;
+  --text-tertiary: #050505;
   --shadow-primary: 0px 6px 16px 0px #0A0A0A1F, 0px 4px 14px 0px #0A0A0A14, 0px 8px 10px 0px #0A0A0A14;
   --processing-dot-size: 4px;
-  --header-footer-background: #DA92FC;
-  --button-background: #FDFFAA;
+  --button-background: #F8D26A;
+  --header-footer-background: #F8D26A;
 }
 
 body {
-  background-image: url('assets/ts-chatbot-bg.jpg');
+  background-color: #003e7e;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,7 +35,6 @@ body {
   box-shadow: var(--shadow-primary);
   /* border: 1px solid var(--border-primary); */
 }
-
 .chatbot-header {
   border-bottom: 1px solid var(--border-primary);;
 }
@@ -61,12 +61,12 @@ body {
 
 .chatbot-input {
   color: var(--text-primary-inverse);
-  background-color: var(--text-primary);
+  background-color: #F3f2f2;
   /* border: 1px solid var(--border-primary); */
 }
 
 .chatbot-input::placeholder {
-  color: var(--text-secondary);
+  color: #555353;
 }
 
 .chatbot-send-button {
@@ -189,6 +189,11 @@ body {
 .prompt-button {
   background-color: var(--background-bubble-primary);
   color: var(--text-bubble-primary);
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.prompt-button:hover {
+  background-color:#c0d2e3; /* Darken the background color by 10% */
 }
 
 /* Toggle Styles */
@@ -288,7 +293,6 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: var(--header-footer-background);
-  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+  clip-path: inset(0 0 0 0); /* This creates a rectangle that covers the entire element */
   z-index: 0;
 }
