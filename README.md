@@ -1,8 +1,5 @@
-# SwiftieGPT
-
-![SwiftieGPT](gh-hero.png)
-
-SwiftieGPT knows Taylor all too well. Ask questions in a clear and concise manner and get back responses based on details from publicly available data on Taylor. From tour dates to song lyrics, learn everything there is to know about the songstress here.
+# CityChats
+Bridging the gap between citizens and their local government by leveraging public record data.
 
 ## Prerequisites
 
@@ -12,8 +9,6 @@ SwiftieGPT knows Taylor all too well. Ask questions in a clear and concise manne
 ## Setup
 
 Clone this repository to your local machine.
-
-Install Puppeteer: `npm i puppeteer`. If you're on a newer Macbook, you'll need to run `PUPPETEER_EXPERIMENTAL_CHROMIUM_MAC_ARM=1 npm i puppeteer`.
 
 Install the rest of the dependencies by running `npm install`.
 
@@ -30,7 +25,7 @@ Copy to supplied `.env.example` to `.env` and enter your credentials for OpenAI 
 
 The first thing you need to to run this chatbot is to load the data. This may take awhile, so grab some coffee! ☕️
 
-`npx ts-node scripts/loadDb.ts`
+`npx ts-node scripts/loadPdf.ts`
 
 ## Running the Project
 
