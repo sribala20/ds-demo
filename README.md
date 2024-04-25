@@ -23,7 +23,7 @@ Copy to supplied `.env.example` to `.env` and enter your credentials for OpenAI 
 
 ## Load the data
 
-The first thing you need to to run this chatbot is to load the data. This may take awhile, so grab some coffee! ☕️
+The first thing you need to to run this chatbot is to load the data. Start by creating an example_data folder in the /src that includes your pdf files. Then run:
 
 `npx ts-node scripts/loadPdf.ts`
 
